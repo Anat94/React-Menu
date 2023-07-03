@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import * as React from "react";
@@ -7,11 +6,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Menu from "./Menu/Menu"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <div></div>,
   },
   {
     path: "/about",
@@ -31,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
+      <Menu />
     </div>
   );
 }
