@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Menu from "./Menu/Menu"
+import MenuCore from "./MenuCore/Menu"
 
 const router = createBrowserRouter([
   {
@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
-      <Menu />
+      <MenuCore />
     </div>
   );
 }

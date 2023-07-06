@@ -25,11 +25,6 @@
     /* background-color: red; */
 }
 
-.item_container:hover {
-    color: rgba(245, 140, 39, 1);
-    cursor: pointer;
-}
-
 .logo_container {
     display: flex;
     justify-content: center;

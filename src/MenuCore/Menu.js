@@ -1,9 +1,10 @@
 import React from 'react'
 import './menu.css'
 import { FaSearch } from 'react-icons/fa';
+import Item from '../Item/Item';
 
 
-const Menu = () => {
+const MenuCore = () => {
     return (
         <div className='menu_container'>
             <div className='left_container'>
@@ -12,14 +13,14 @@ const Menu = () => {
                 </div>
             </div>
             <div className='right_container'>
-                <div className='item_container'>Home</div>
-                <div className='item_container'>About</div>
-                <div className='item_container'>Shop</div>
-                <div className='item_container'>Contact</div>
-                <div className='item_container'><FaSearch /></div>
+                <Item Title={"Home"}/>
+                <Item Title={"About"}/>
+                <Item Title={"Shop"}/>
+                <Item Title={"Contact"}/>
+                <Item Title={<FaSearch />}/>
             </div>
         </div>
     )
 }
 
-export default Menu
+export default MenuCore
