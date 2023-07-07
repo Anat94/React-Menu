@@ -9,12 +9,13 @@
 .left_container {
     width: 45%;
     height: 100%;
-    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .right_container {
     display: flex;
-    /* justify-content: center; */
     margin-left: 4%;
     gap: 7%;
     align-items: center;
@@ -22,7 +23,6 @@
     font-weight: bold;
     font-size: 1rem;
     color: black;
-    /* background-color: red; */
 }
 
 .logo_container {
@@ -34,6 +34,6 @@
 }
 
 .image {
-    max-width: 29%;
+    max-width: 80%;
     height: auto;
 }

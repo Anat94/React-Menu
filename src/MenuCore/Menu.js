@@ -17,7 +17,7 @@ const MenuCore = () => {
                 <Item Title={"About"}/>
                 <Item Title={"Shop"}/>
                 <Item Title={"Contact"}/>
-                <Item Title={<FaSearch />}/>
+                <Item Title={<FaSearch />} type={"searchbar"}/>
             </div>
         </div>
     )
