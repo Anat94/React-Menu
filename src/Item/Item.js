@@ -1,14 +1,16 @@
 import React from 'react'
 import style from './Item.module.css'
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 
-//type : dropdown, searchbar
 const Item = ({Title, type}) => {
     const [isClick, setIsClick] = React.useState(false)
-    console.log("type = ", type, " ", type === "searchbar");
   return (
         type === "dropdown" ?
-            <div className={style.item_container}>{Title}</div>
+            <div className={style.dropdownContainer}>
+                <div className={style.item_container}>{Title}</div>
+                <MdKeyboardArrowDown />
+            </div>
         : type === "searchbar" ? (
             <>
                 <div className={style.item_container} onClick={() => setIsClick(!isClick)}>{Title} </div>

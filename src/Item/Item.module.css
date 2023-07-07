@@ -58,5 +58,11 @@
     font-size: large;
 }
 
-
 /*TODO: sous  810px caca */
+
+
+@media only screen and (max-width: 992px) {
+    .searchContainer {
+        right: 90%;
+    }
+}

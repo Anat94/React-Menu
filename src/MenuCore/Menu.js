@@ -15,7 +15,7 @@ const MenuCore = () => {
             <div className='right_container'>
                 <Item Title={"Home"}/>
                 <Item Title={"About"}/>
-                <Item Title={"Shop"}/>
+                <Item Title={"Shop"} type={"dropdown"}/>
                 <Item Title={"Contact"}/>
                 <Item Title={<FaSearch />} type={"searchbar"}/>
             </div>
