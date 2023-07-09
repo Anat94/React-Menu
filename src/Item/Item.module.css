@@ -66,3 +66,31 @@
         right: 90%;
     }
 }
+/* Dropdown */
+
+.dropdownContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdownContainer:hover {
+    cursor: pointer;
+}
+
+.dropdownComponent {
+    display: block; /* TODO: change to none */
+    position: absolute;
+    border: 1px solid black;
+    padding: 1%;
+    top: 8%;
+}
+
+.dropdownContainer:hover + .dropdownComponent {
+    display: block;
+}
+
+.linkToAction {
+    text-decoration: none;
+    color: black;
+}

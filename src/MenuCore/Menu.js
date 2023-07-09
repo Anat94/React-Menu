@@ -13,11 +13,11 @@ const MenuCore = () => {
                 </div>
             </div>
             <div className='right_container'>
-                <Item Title={"Home"}/>
-                <Item Title={"About"}/>
-                <Item Title={"Shop"} type={"dropdown"}/>
-                <Item Title={"Contact"}/>
-                <Item Title={<FaSearch />} type={"searchbar"}/>
+                <Item className="Item" Title={"Home"} action={"/"}/>
+                <Item className="Item" Title={"About"} action={"/about"} />
+                <Item className="Item" Title={"Shop"} type={"dropdown"}/>
+                <Item className="Item" Title={"Contact"} action={"/contact"}/>
+                <Item className="Item" Title={<FaSearch />} type={"searchbar"}/>
             </div>
         </div>
     )

@@ -1,29 +1,54 @@
 import './App.css';
 
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import MenuCore from "./MenuCore/Menu"
+import NotFound from './NotFound/NotFound';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div></div>,
+    element:  (
+      <>
+        <MenuCore />
+        <div></div>
+      </>),
   },
   {
     path: "/about",
-    element: <div>About</div>,
+    element:  (
+      <>
+        <MenuCore />
+        <div>About</div>
+      </>),
   },
   {
     path: "/shop",
-    element: <div>Shop</div>,
+    element:  (
+      <>
+        <MenuCore />
+        <div>Shop</div>
+      </>),
   },
   {
     path: "/contact",
-    element: <div>Contact</div>,
+    element:  (
+      <>
+        <MenuCore />
+        <div>Contact</div>
+      </>),
+  },
+  {
+    path: "*",
+    element:  (
+      <>
+        <MenuCore />
+        <NotFound />
+      </>),
   },
 ]);
 
@@ -31,7 +56,6 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
-      <MenuCore />
     </div>
   );
 }

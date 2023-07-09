@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.right_container {
+.right_container  {
     display: flex;
     margin-left: 4%;
     gap: 7%;
