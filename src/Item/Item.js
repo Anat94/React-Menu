@@ -4,9 +4,19 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { Link } from "react-router-dom";
 
 
-const Item = ({Title, type, action}) => {
-    const [isClick, setIsClick] = React.useState(false)
-    console.log("action", action);
+const Item = ({Title, type, action, setItemDisplayed}) => {
+    const [isClick, setIsClick] = React.useState(false);
+
+    const displayItem = React.useCallback(() => {
+        setIsClick(!isClick);
+        setItemDisplayed(false)
+    }, [isClick, setItemDisplayed]);
+
+    const hideItem = React.useCallback(() => {
+        setIsClick(!isClick);
+        setItemDisplayed(true)
+    }, [isClick, setItemDisplayed]);
+
     return (
         type === "dropdown" ?
         <>
@@ -27,11 +37,13 @@ const Item = ({Title, type, action}) => {
         </>
         : type === "searchbar" ? (
             <>
-                <div className={style.item_container} onClick={() => setIsClick(!isClick)}>{Title} </div>
+                {
+                    !isClick && <div className={style.item_container} onClick={displayItem}>{Title} </div>
+                }
                 {
                     isClick && (
                         <div className={style.searchContainer}>
-                            <div className={style.item_container} onClick={() => setIsClick(!isClick)}>{Title}</div>
+                            <div className={style.item_container} onClick={hideItem}>{Title}</div>
                             <input className={style.searchBox} type="text" name="search_value" placeholder='Search ...' />
                         </div>
                     )
