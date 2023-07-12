@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# TODO:
+- Link menu on phone  --------------------> OK
+- Create reusable components  ------------> OK
+- Fix dropdown menu
+- Clean code :
+    - Package.json -----------------------> OK
+    - unused css class
+    - js files
+    - change logo
+- Responsive animation when menu is show -> OK
+- Fix warn when project is start
+- Tests / Unit tests ??
+- Readme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

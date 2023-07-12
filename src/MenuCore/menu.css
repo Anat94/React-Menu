@@ -128,7 +128,10 @@
         animation: menuAnimation 0.5s ease-in-out;
     }
 
-    .itemPhoneButton {
+    .searchBox {
+        position: relative;
+        left: 8%;
+        gap: 8%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -136,15 +139,7 @@
         font-weight: bold;
         color: black;
         text-decoration: none;
-        margin: 1%;
-        animation: menuAnimation 1s ease-in-out;
-    }
-
-    .searchBox {
-        display: flex;
-        position: relative;
-        left: 8%;
-        gap: 8%;
+        margin-top: 4%;
     }
 
     .searchBar {

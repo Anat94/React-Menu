@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { Link } from "react-router-dom";
 
 
-const Item = ({Title, type, action, setItemDisplayed}) => {
+const Item = ({Title, type, action, setItemDisplayed = false}) => {
     const [isClick, setIsClick] = React.useState(false);
 
     const displayItem = React.useCallback(() => {
@@ -43,8 +43,8 @@ const Item = ({Title, type, action, setItemDisplayed}) => {
                 {
                     isClick && (
                         <div className={style.searchContainer}>
-                            <div className={style.item_container} onClick={hideItem}>{Title}</div>
                             <input className={style.searchBox} type="text" name="search_value" placeholder='Search ...' />
+                            <div className={style.item_container} onClick={hideItem}>{Title}</div>
                         </div>
                     )
                 }

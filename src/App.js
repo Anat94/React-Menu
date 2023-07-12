@@ -6,15 +6,23 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import MenuCore from "./MenuCore/Menu"
 import NotFound from './NotFound/NotFound';
+
+/* Include to use the menu */
+import MenuCore from "./MenuCore/Menu"
+import Item from './Item/Item'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:  (
       <>
-        <MenuCore />
+        <MenuCore searchDisplayed={true}>
+            <Item Title={"Home"} action={"/"} />
+            <Item Title={"About"} action={"/about"} />
+            <Item Title={"Shop"} type={"dropdown"} />
+            <Item Title={"Contact"} action={"/contact"} />
+        </MenuCore>
         <div></div>
       </>),
   },
@@ -22,7 +30,12 @@ const router = createBrowserRouter([
     path: "/about",
     element:  (
       <>
-        <MenuCore />
+        <MenuCore searchDisplayed={true}>
+            <Item Title={"Home"} action={"/"} />
+            <Item Title={"About"} action={"/about"} />
+            <Item Title={"Shop"} type={"dropdown"} />
+            <Item Title={"Contact"} action={"/contact"} />
+        </MenuCore>
         <div>About</div>
       </>),
   },
@@ -30,7 +43,12 @@ const router = createBrowserRouter([
     path: "/shop",
     element:  (
       <>
-        <MenuCore />
+        <MenuCore searchDisplayed={true}>
+            <Item Title={"Home"} action={"/"} />
+            <Item Title={"About"} action={"/about"} />
+            <Item Title={"Shop"} type={"dropdown"} />
+            <Item Title={"Contact"} action={"/contact"} />
+        </MenuCore>
         <div>Shop</div>
       </>),
   },
@@ -38,7 +56,12 @@ const router = createBrowserRouter([
     path: "/contact",
     element:  (
       <>
-        <MenuCore />
+        <MenuCore searchDisplayed={true}>
+            <Item Title={"Home"} action={"/"} />
+            <Item Title={"About"} action={"/about"} />
+            <Item Title={"Shop"} type={"dropdown"} />
+            <Item Title={"Contact"} action={"/contact"} />
+        </MenuCore>
         <div>Contact</div>
       </>),
   },
@@ -46,7 +69,12 @@ const router = createBrowserRouter([
     path: "*",
     element:  (
       <>
-        <MenuCore />
+        <MenuCore searchDisplayed={true}>
+            <Item Title={"Home"} action={"/"} />
+            <Item Title={"About"} action={"/about"} />
+            <Item Title={"Shop"} type={"dropdown"} />
+            <Item Title={"Contact"} action={"/contact"} />
+        </MenuCore>
         <NotFound />
       </>),
   },
