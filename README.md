@@ -1,14 +1,17 @@
 # TODO:
 - Link menu on phone  --------------------> OK
 - Create reusable components  ------------> OK
-- Fix dropdown menu
 - Clean code :
     - Package.json -----------------------> OK
-    - unused css class
-    - js files
-    - change logo
+    - unused css class -------------------> OK
+    - js files ---------------------------> OK
+    - change logo  -----------------------> OK
+    - transform css class to stye.css ----> OK
 - Responsive animation when menu is show -> OK
-- Fix warn when project is start
+- Add element is clicked on menu when on page
+- Fix dropdown menu
+- Fix warn when at project start ( OK ???)
+- Check responsive
 - Tests / Unit tests ??
 - Readme
 

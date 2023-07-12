@@ -1,4 +1,3 @@
-
 .notFoundContainer {
   display: flex;
   height: 90vh;
@@ -27,11 +26,7 @@
   margin-bottom: 0;
 }
 
-.colorBlue {
-  color: #00b7ff;
-}
-
-.title {
+.notFoundTitle {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
   font-weight: 400;

@@ -24,33 +24,22 @@ const Item = ({Title, type, action, setItemDisplayed = false}) => {
                 <div>{Title}</div>
                 <MdKeyboardArrowDown />
             </div>
-            {/* <div className={style.dropdownComponent}>
-                <ul className={style.dropdown}>
-                    <li key={1} className={style.menuitems}>
-                        <a href={"/about"}>{"COUCOU"}</a>
-                    </li>
-                    <li key={1} className={style.menuitems}>
-                        <a href={"/about"}>{"COUCOU2"}</a>
-                    </li>
-                </ul>
-            </div> */}
+            {/* TODO: Find a way to display dropdown menu outside of the menu */}
         </>
         : type === "searchbar" ? (
             <>
                 {
-                    !isClick && <div className={style.item_container} onClick={displayItem}>{Title} </div>
-                }
-                {
-                    isClick && (
+                    isClick ? (
                         <div className={style.searchContainer}>
                             <input className={style.searchBox} type="text" name="search_value" placeholder='Search ...' />
                             <div className={style.item_container} onClick={hideItem}>{Title}</div>
                         </div>
-                    )
+                    ) :
+                    <div className={style.item_container} onClick={displayItem}>{Title} </div>
                 }
             </>
         ) :
-        <Link to={action} className={style.linkToAction}><div className={`Item ${style.item_container}`}>{Title}</div></Link>
+        <Link to={action} className={style.linkToAction}><div className={style.item_container}>{Title}</div></Link>
     )
 }
 

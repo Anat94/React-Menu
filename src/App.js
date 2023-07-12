@@ -12,71 +12,78 @@ import NotFound from './NotFound/NotFound';
 import MenuCore from "./MenuCore/Menu"
 import Item from './Item/Item'
 
+import defaultLogo from './defaultLogo.png'
+
 const router = createBrowserRouter([
   {
     path: "/",
     element:  (
       <>
-        <MenuCore searchDisplayed={true}>
+        <MenuCore searchDisplayed={true} logo={defaultLogo}>
             <Item Title={"Home"} action={"/"} />
             <Item Title={"About"} action={"/about"} />
             <Item Title={"Shop"} type={"dropdown"} />
             <Item Title={"Contact"} action={"/contact"} />
         </MenuCore>
         <div></div>
-      </>),
+      </>
+    ),
   },
   {
     path: "/about",
     element:  (
       <>
-        <MenuCore searchDisplayed={true}>
+        <MenuCore searchDisplayed={true} >
             <Item Title={"Home"} action={"/"} />
             <Item Title={"About"} action={"/about"} />
             <Item Title={"Shop"} type={"dropdown"} />
             <Item Title={"Contact"} action={"/contact"} />
         </MenuCore>
         <div>About</div>
-      </>),
+      </>
+    ),
   },
   {
     path: "/shop",
     element:  (
       <>
-        <MenuCore searchDisplayed={true}>
+        <MenuCore searchDisplayed={true} >
             <Item Title={"Home"} action={"/"} />
             <Item Title={"About"} action={"/about"} />
             <Item Title={"Shop"} type={"dropdown"} />
             <Item Title={"Contact"} action={"/contact"} />
         </MenuCore>
         <div>Shop</div>
-      </>),
+      </>
+    ),
   },
   {
     path: "/contact",
     element:  (
       <>
-        <MenuCore searchDisplayed={true}>
+        <MenuCore searchDisplayed={true} >
             <Item Title={"Home"} action={"/"} />
             <Item Title={"About"} action={"/about"} />
             <Item Title={"Shop"} type={"dropdown"} />
             <Item Title={"Contact"} action={"/contact"} />
         </MenuCore>
         <div>Contact</div>
-      </>),
+      </>
+    ),
   },
   {
     path: "*",
     element:  (
       <>
-        <MenuCore searchDisplayed={true}>
+        <MenuCore searchDisplayed={true} >
             <Item Title={"Home"} action={"/"} />
             <Item Title={"About"} action={"/about"} />
             <Item Title={"Shop"} type={"dropdown"} />
             <Item Title={"Contact"} action={"/contact"} />
         </MenuCore>
         <NotFound />
-      </>),
+      </>
+    ),
   },
 ]);
 

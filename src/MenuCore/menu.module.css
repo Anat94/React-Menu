@@ -39,6 +39,7 @@
 .burgerButton {
     display: none;
 }
+
 .logo_container {
     display: flex;
     justify-content: center;
@@ -47,7 +48,7 @@
     margin-left: 2%;
 }
 
-.image {
+.menuLogo {
     max-width: 80%;
     height: auto;
 }
@@ -64,6 +65,7 @@
     .itemMenu {
         display: none;
     }
+
     .burgerButton {
         display: flex;
         align-items: center;
@@ -167,9 +169,5 @@
     .searchBar:-ms-input-placeholder { /* Internet Explorer 10+ */
         padding-left: 20px;
         font-size: large;
-    }
-
-    .itemPhoneButton:hover {
-        color: rgba(245, 140, 39, 1);
     }
 }

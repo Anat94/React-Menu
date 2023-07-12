@@ -1,15 +1,15 @@
 import React from 'react'
-import './NotFound.css'
+import style from './NotFound.module.css'
 
 const NotFound = () => {
     return (
         <>
-            <div className='notFoundContainer'>
-                <div className="notFoundContent">
-                    <div className="display404">
-                        <h1 className='text404'>4<span className='colorBlue'>0</span>4</h1>
+            <div className={style.notFoundContainer}>
+                <div className={style.notFoundContent}>
+                    <div className={style.display404}>
+                        <h1 className={style.text404}>4<span style={{color: '#00b7ff'}}>0</span>4</h1>
                     </div>
-                    <h2 className='title'>The page requested can not be found</h2>
+                    <h2 className={style.notFoundTitle}>The page requested can not be found</h2>
                 </div>
             </div>
         </>
