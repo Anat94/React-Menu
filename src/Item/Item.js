@@ -24,7 +24,7 @@ const Item = ({Title, type, action, setItemDisplayed = false}) => {
                 <div>{Title}</div>
                 <MdKeyboardArrowDown />
             </div>
-            {/* TODO: Find a way to display dropdown menu outside of the menu */}
+            {/* // TODO: Find a way to display dropdown menu outside of the menu */}
         </>
         : type === "searchbar" ? (
             <>

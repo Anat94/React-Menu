@@ -8,12 +8,10 @@
     - change logo  -----------------------> OK
     - transform css class to stye.css ----> OK
 - Responsive animation when menu is show -> OK
-- Add element is clicked on menu when on page
-- Fix dropdown menu
-- Fix warn when at project start ( OK ???)
-- Check responsive
-- Tests / Unit tests ??
+- Check responsive -----------------------> OK
+- Fix warn when at project start ---------> OK ??
 - Readme
+- Fix dropdown menu
 
 
 ## Available Scripts
