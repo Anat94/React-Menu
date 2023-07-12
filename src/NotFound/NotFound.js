@@ -9,7 +9,7 @@ const NotFound = () => {
                     <div className={style.display404}>
                         <h1 className={style.text404}>4<span style={{color: '#00b7ff'}}>0</span>4</h1>
                     </div>
-                    <h2 className={style.notFoundTitle}>The page requested can not be found</h2>
+                    <h2 className={style.notFoundtitle}>The page requested can not be found</h2>
                 </div>
             </div>
         </>

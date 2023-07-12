@@ -20,10 +20,10 @@ const router = createBrowserRouter([
     element:  (
       <>
         <MenuCore searchDisplayed={true} logo={defaultLogo}>
-            <Item Title={"Home"} action={"/"} />
-            <Item Title={"About"} action={"/about"} />
-            <Item Title={"Shop"} type={"dropdown"} />
-            <Item Title={"Contact"} action={"/contact"} />
+            <Item title={"Home"} action={"/"} />
+            <Item title={"About"} action={"/about"} />
+            <Item title={"Shop"} type={"dropdown"} />
+            <Item title={"Contact"} action={"/contact"} />
         </MenuCore>
         <div></div>
       </>
@@ -34,10 +34,10 @@ const router = createBrowserRouter([
     element:  (
       <>
         <MenuCore searchDisplayed={true} >
-            <Item Title={"Home"} action={"/"} />
-            <Item Title={"About"} action={"/about"} />
-            <Item Title={"Shop"} type={"dropdown"} />
-            <Item Title={"Contact"} action={"/contact"} />
+            <Item title={"Home"} action={"/"} />
+            <Item title={"About"} action={"/about"} />
+            <Item title={"Shop"} type={"dropdown"} />
+            <Item title={"Contact"} action={"/contact"} />
         </MenuCore>
         <div>About</div>
       </>
@@ -48,10 +48,10 @@ const router = createBrowserRouter([
     element:  (
       <>
         <MenuCore searchDisplayed={true} >
-            <Item Title={"Home"} action={"/"} />
-            <Item Title={"About"} action={"/about"} />
-            <Item Title={"Shop"} type={"dropdown"} />
-            <Item Title={"Contact"} action={"/contact"} />
+            <Item title={"Home"} action={"/"} />
+            <Item title={"About"} action={"/about"} />
+            <Item title={"Shop"} type={"dropdown"} />
+            <Item title={"Contact"} action={"/contact"} />
         </MenuCore>
         <div>Shop</div>
       </>
@@ -62,10 +62,10 @@ const router = createBrowserRouter([
     element:  (
       <>
         <MenuCore searchDisplayed={true} >
-            <Item Title={"Home"} action={"/"} />
-            <Item Title={"About"} action={"/about"} />
-            <Item Title={"Shop"} type={"dropdown"} />
-            <Item Title={"Contact"} action={"/contact"} />
+            <Item title={"Home"} action={"/"} />
+            <Item title={"About"} action={"/about"} />
+            <Item title={"Shop"} type={"dropdown"} />
+            <Item title={"Contact"} action={"/contact"} />
         </MenuCore>
         <div>Contact</div>
       </>
@@ -76,10 +76,10 @@ const router = createBrowserRouter([
     element:  (
       <>
         <MenuCore searchDisplayed={true} >
-            <Item Title={"Home"} action={"/"} />
-            <Item Title={"About"} action={"/about"} />
-            <Item Title={"Shop"} type={"dropdown"} />
-            <Item Title={"Contact"} action={"/contact"} />
+            <Item title={"Home"} action={"/"} />
+            <Item title={"About"} action={"/about"} />
+            <Item title={"Shop"} type={"dropdown"} />
+            <Item title={"Contact"} action={"/contact"} />
         </MenuCore>
         <NotFound />
       </>

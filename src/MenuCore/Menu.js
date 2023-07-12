@@ -26,7 +26,7 @@ const MenuCore = ({searchDisplayed, children, logo=defaultLogo }) => {
                             )
                         }
                         {
-                            searchDisplayed && <Item Title={<FaSearch />} type={"searchbar"} setItemDisplayed={setItemDisplayed}/>
+                            searchDisplayed && <Item title={<FaSearch />} type={"searchbar"} setItemDisplayed={setItemDisplayed}/>
                         }
                     </div>
                     <div className={style.burgerButton}>

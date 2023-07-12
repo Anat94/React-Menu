@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { Link } from "react-router-dom";
 
 
-const Item = ({Title, type, action, setItemDisplayed = false}) => {
+const Item = ({title, type, action, setItemDisplayed = false}) => {
     const [isClick, setIsClick] = React.useState(false);
 
     const displayItem = React.useCallback(() => {
@@ -21,7 +21,7 @@ const Item = ({Title, type, action, setItemDisplayed = false}) => {
         type === "dropdown" ?
         <>
             <div className={`${style.dropdownContainer} ${style.item_container}`}>
-                <div>{Title}</div>
+                <div>{title}</div>
                 <MdKeyboardArrowDown />
             </div>
             {/* // TODO: Find a way to display dropdown menu outside of the menu */}
@@ -32,14 +32,14 @@ const Item = ({Title, type, action, setItemDisplayed = false}) => {
                     isClick ? (
                         <div className={style.searchContainer}>
                             <input className={style.searchBox} type="text" name="search_value" placeholder='Search ...' />
-                            <div className={style.item_container} onClick={hideItem}>{Title}</div>
+                            <div className={style.item_container} onClick={hideItem}>{title}</div>
                         </div>
                     ) :
-                    <div className={style.item_container} onClick={displayItem}>{Title} </div>
+                    <div className={style.item_container} onClick={displayItem}>{title} </div>
                 }
             </>
         ) :
-        <Link to={action} className={style.linkToAction}><div className={style.item_container}>{Title}</div></Link>
+        <Link to={action} className={style.linkToAction}><div className={style.item_container}>{title}</div></Link>
     )
 }
 
